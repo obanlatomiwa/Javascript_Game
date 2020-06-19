@@ -9,3 +9,31 @@ GAME RULES:
 
 */
 
+let score, roundScore, activePlayer;
+
+score = [0, 0];
+activePlayer = 0;
+roundScore = 0;
+
+document.querySelector('.dice').style.display = 'none';
+
+// document.querySelector('#current-' + activePlayer).textContent = dice;
+// let x = document.querySelector('#score-0').textContent;
+// console.log(x);
+
+
+document.getElementById('score-0').textContent = '0';
+document.getElementById('score-1').textContent = '0';
+document.getElementById('current-0').textContent = '0';
+document.getElementById('current-1').textContent = '0';
+
+
+document.querySelector('.btn-roll').addEventListener('click', function(){
+    // randomize dice
+    let dice = Math.floor(Math.random() * 6) + 1;
+
+    // change display
+    let dice_display = document.querySelector('.dice');
+    dice_display.style.display = 'block';
+    dice_display.src = 'dice-' + dice + '.png';
+})
