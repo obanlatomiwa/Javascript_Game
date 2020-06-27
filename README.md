@@ -1,4 +1,4 @@
-# Roll_The_Dice_Game
+# Roll The Dice Game
 
 ## GAME RULES
 
